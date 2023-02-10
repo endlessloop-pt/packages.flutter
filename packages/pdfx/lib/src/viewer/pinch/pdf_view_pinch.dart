@@ -262,7 +262,7 @@ class _PdfViewPinchState extends State<PdfViewPinch>
     final r = m.row0[0];
     final exposed = Rect.fromLTWH(
         -m.row0[3], -m.row1[3], _lastViewSize!.width, _lastViewSize!.height);
-    var pagesToUpdate = 0;
+    var pagesToUpdate = 1;
     var changeCount = 0;
     _visiblePages.clear();
     for (final page in _pages) {
